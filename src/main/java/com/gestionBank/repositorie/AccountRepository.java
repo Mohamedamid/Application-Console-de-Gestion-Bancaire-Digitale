@@ -1,4 +1,4 @@
 package com.gestionBank.repositorie;
 
-public interface UserRepositorie {
+public interface AccountRepository {
 }
