@@ -7,8 +7,9 @@ import java.util.UUID;
 
 public interface AccountRepository {
     Account save(Account account);
-    Optional<Account> findByAccoutId(String accoutId);
+    Optional<Account> findByAccountId(String accoutId);
     List<Account> findAll();
     List<Account> findByOwnerUserId(UUID ownerUserId);
-    void delete(Account account);
+    void delete(String account);
 }
+
