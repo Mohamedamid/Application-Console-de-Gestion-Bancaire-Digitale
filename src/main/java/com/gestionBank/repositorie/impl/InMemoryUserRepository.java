@@ -29,7 +29,7 @@ public class InMemoryUserRepository implements UserRepository {
         users.remove(id);
     }
 
-    public boolean existsById(String email){
+    public boolean existsByEmail(String email){
         return users.values().stream().anyMatch(user -> user.getEmail().equals(email));
     }
 
